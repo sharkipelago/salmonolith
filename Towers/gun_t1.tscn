@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cir0d11afegaa"]
+
+[ext_resource type="Script" path="res://Towers/gun_t1.gd" id="1_m7r7a"]
+[ext_resource type="ArrayMesh" uid="uid://bigcvik3ainvx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_blaster.obj" id="2_4ujb1"]
+[ext_resource type="PackedScene" uid="uid://d2ewc10d6aglm" path="res://Towers/range_indicator.tscn" id="3_f4dmr"]
+
+[node name="GunT1" type="Node3D"]
+script = ExtResource("1_m7r7a")
+
+[node name="Turret" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_4ujb1")
+
+[node name="Muzzle" type="Marker3D" parent="Turret"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329846, 0.415727)
+
+[node name="RangeIndicator" parent="." instance=ExtResource("3_f4dmr")]
+skeleton = NodePath("../Turret")

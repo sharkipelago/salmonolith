@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgo0s4hwmdnoq"
+path="res://.godot/imported/woodStructure_high.obj-ad39eff8e53e90f39277a2cefcbad1ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/woodStructure_high.obj-ad39eff8e53e90f39277a2cefcbad1ea.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/woodStructure_high.obj"
+dest_files=["res://.godot/imported/woodStructure_high.obj-ad39eff8e53e90f39277a2cefcbad1ea.mesh", "res://.godot/imported/woodStructure_high.obj-ad39eff8e53e90f39277a2cefcbad1ea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2ewc10d6aglm"]
+
+[ext_resource type="ArrayMesh" uid="uid://rwlt6eb1b2uc" path="res://Assets/Meshes/range_mesh.tres" id="1_hpqkg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjrb5"]
+transparency = 1
+albedo_color = Color(1, 0.25098, 0, 0.396078)
+
+[sub_resource type="TorusMesh" id="TorusMesh_u5u4r"]
+outer_radius = 0.51
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phn3e"]
+albedo_color = Color(1, 0.25098, 0, 1)
+
+[node name="RangeIndicator" type="MeshInstance3D"]
+mesh = ExtResource("1_hpqkg")
+surface_material_override/0 = SubResource("StandardMaterial3D_yjrb5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("TorusMesh_u5u4r")
+surface_material_override/0 = SubResource("StandardMaterial3D_phn3e")

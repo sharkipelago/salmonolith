@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cexpqe6iwr566"
+path="res://.godot/imported/enemy_ufoRed.obj-315f083370322c0bf504cb4f75abc8ca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/enemy_ufoRed.obj-315f083370322c0bf504cb4f75abc8ca.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoRed.obj"
+dest_files=["res://.godot/imported/enemy_ufoRed.obj-315f083370322c0bf504cb4f75abc8ca.mesh", "res://.godot/imported/enemy_ufoRed.obj-315f083370322c0bf504cb4f75abc8ca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

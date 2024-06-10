@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cvka6aealyc5w"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/ocean.gdshader" id="1_abrgh"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_abrgh")
+shader_parameter/WATER_COL = Color(0.639057, 0.604377, 0.14284, 1)
+shader_parameter/WATER2_COL = Color(0.04, 0.35, 0.78, 1)
+shader_parameter/FOAM_COL = Color(0.8125, 0.9609, 0.9648, 1)
+shader_parameter/distortion_speed = 4.0
+shader_parameter/tile = Vector2(8, 8)
+shader_parameter/height = 0.8
+shader_parameter/wave_size = Vector2(0.1, 0.1)
+shader_parameter/wave_speed = 4.755

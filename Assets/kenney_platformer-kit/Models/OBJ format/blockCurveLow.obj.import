@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxrjx2n0o7l7p"
+path="res://.godot/imported/blockCurveLow.obj-6ddf7d3dffbed90183ef5b24c2b11d15.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blockCurveLow.obj-6ddf7d3dffbed90183ef5b24c2b11d15.mesh"]
+
+source_file="res://Assets/kenney_platformer-kit/Models/OBJ format/blockCurveLow.obj"
+dest_files=["res://.godot/imported/blockCurveLow.obj-6ddf7d3dffbed90183ef5b24c2b11d15.mesh", "res://.godot/imported/blockCurveLow.obj-6ddf7d3dffbed90183ef5b24c2b11d15.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

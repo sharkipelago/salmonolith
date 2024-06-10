@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cfonsy4bi3b4f"
+path="res://.godot/imported/tile_riverBridge.obj-8e7d5e8183520508cc49065c0368fcbd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_riverBridge.obj-8e7d5e8183520508cc49065c0368fcbd.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverBridge.obj"
+dest_files=["res://.godot/imported/tile_riverBridge.obj-8e7d5e8183520508cc49065c0368fcbd.mesh", "res://.godot/imported/tile_riverBridge.obj-8e7d5e8183520508cc49065c0368fcbd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7c311m4km6ok"
+path="res://.godot/imported/weapon_catapult.obj-aa3436828bf439268131522c217e20bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/weapon_catapult.obj-aa3436828bf439268131522c217e20bd.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_catapult.obj"
+dest_files=["res://.godot/imported/weapon_catapult.obj-aa3436828bf439268131522c217e20bd.mesh", "res://.godot/imported/weapon_catapult.obj-aa3436828bf439268131522c217e20bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdb3mh8r32nm1"
+path="res://.godot/imported/snow_tile_cornerOuter.obj-b6f0a6cca4b9a042b894fde9d4514a59.mesh"
+
+[deps]
+
+files=["res://.godot/imported/snow_tile_cornerOuter.obj-b6f0a6cca4b9a042b894fde9d4514a59.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerOuter.obj"
+dest_files=["res://.godot/imported/snow_tile_cornerOuter.obj-b6f0a6cca4b9a042b894fde9d4514a59.mesh", "res://.godot/imported/snow_tile_cornerOuter.obj-b6f0a6cca4b9a042b894fde9d4514a59.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

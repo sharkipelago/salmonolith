@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ce31mlqf21waa"
+path="res://.godot/imported/blockSnowRoundedLow.obj-5a2831a679744da181ea0e0f4888a97b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/blockSnowRoundedLow.obj-5a2831a679744da181ea0e0f4888a97b.mesh"]
+
+source_file="res://Assets/kenney_platformer-kit/Models/OBJ format/blockSnowRoundedLow.obj"
+dest_files=["res://.godot/imported/blockSnowRoundedLow.obj-5a2831a679744da181ea0e0f4888a97b.mesh", "res://.godot/imported/blockSnowRoundedLow.obj-5a2831a679744da181ea0e0f4888a97b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

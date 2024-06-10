@@ -1,0 +1,734 @@
+[gd_scene load_steps=147 format=3 uid="uid://cway4oe2a2vgg"]
+
+[ext_resource type="ArrayMesh" uid="uid://deawycu20syfs" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_crystal.obj" id="1_lr6ge"]
+[ext_resource type="ArrayMesh" uid="uid://cxbq4vv3mq6n" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_crystalLarge.obj" id="2_ma7xk"]
+[ext_resource type="ArrayMesh" uid="uid://cj6hrofttodfq" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_dirt.obj" id="3_l5e2r"]
+[ext_resource type="ArrayMesh" uid="uid://b8oks07sq808k" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_dirtLarge.obj" id="4_cd2ke"]
+[ext_resource type="ArrayMesh" uid="uid://14w0tfwdrrsr" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_rocks.obj" id="5_5f38i"]
+[ext_resource type="ArrayMesh" uid="uid://dj1ljc4sngbnw" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_rocksLarge.obj" id="6_34iro"]
+[ext_resource type="ArrayMesh" uid="uid://c15s2nygjkdj0" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_tree.obj" id="7_dwndb"]
+[ext_resource type="ArrayMesh" uid="uid://cvw7i2ur2meaa" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/detail_treeLarge.obj" id="8_671oh"]
+[ext_resource type="ArrayMesh" uid="uid://dqdor7lgrrpun" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoGreen.obj" id="9_1lh56"]
+[ext_resource type="ArrayMesh" uid="uid://cjck0n4cohiiy" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoGreenWeapon.obj" id="10_3sv6m"]
+[ext_resource type="ArrayMesh" uid="uid://b612jt50rfoe6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoPurple.obj" id="11_gtyne"]
+[ext_resource type="ArrayMesh" uid="uid://bmaq1q4c3g8q4" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoPurpleWeapon.obj" id="12_bbsxb"]
+[ext_resource type="ArrayMesh" uid="uid://cexpqe6iwr566" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoRed.obj" id="13_cpyv1"]
+[ext_resource type="ArrayMesh" uid="uid://bo7f4hqlxdudb" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoRedWeapon.obj" id="14_snyhr"]
+[ext_resource type="ArrayMesh" uid="uid://c0lwk0x0dnwhm" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoYellow.obj" id="15_bh6mh"]
+[ext_resource type="ArrayMesh" uid="uid://cbbrq45ee3u1v" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/enemy_ufoYellowWeapon.obj" id="16_awacl"]
+[ext_resource type="ArrayMesh" uid="uid://dra13p8o5a3v6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_crystal.obj" id="17_bcjns"]
+[ext_resource type="ArrayMesh" uid="uid://bm2fia8bkpp0m" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_crystalLarge.obj" id="18_hifoq"]
+[ext_resource type="ArrayMesh" uid="uid://ci0cigdqjpxj3" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_dirt.obj" id="19_vmxoh"]
+[ext_resource type="ArrayMesh" uid="uid://ca2d64k3cp1or" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_dirtLarge.obj" id="20_ka2wf"]
+[ext_resource type="ArrayMesh" uid="uid://bhtk45jnf8im" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_rocks.obj" id="21_ifrct"]
+[ext_resource type="ArrayMesh" uid="uid://dw4yjpev4n6mj" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_rocksLarge.obj" id="22_ekiox"]
+[ext_resource type="ArrayMesh" uid="uid://d32xyeal0s2l8" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_tree.obj" id="23_1kln6"]
+[ext_resource type="ArrayMesh" uid="uid://cocr2v5kgprkc" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_detail_treeLarge.obj" id="24_xsvmj"]
+[ext_resource type="ArrayMesh" uid="uid://pg108it1loj" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile.obj" id="25_eada2"]
+[ext_resource type="ArrayMesh" uid="uid://h4qwuxldi6vu" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_bump.obj" id="26_acyxe"]
+[ext_resource type="ArrayMesh" uid="uid://dpd3wmdjna13o" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerInner.obj" id="27_4qnnf"]
+[ext_resource type="ArrayMesh" uid="uid://c6lbyqa20av1h" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerLarge.obj" id="28_apayk"]
+[ext_resource type="ArrayMesh" uid="uid://cdb3mh8r32nm1" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerOuter.obj" id="29_45iy8"]
+[ext_resource type="ArrayMesh" uid="uid://bqwbxal2u5wip" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerRound.obj" id="30_t7x6c"]
+[ext_resource type="ArrayMesh" uid="uid://nwdeogibpeci" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_cornerSquare.obj" id="31_1rrsx"]
+[ext_resource type="ArrayMesh" uid="uid://dby1btnbja0v6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_crossing.obj" id="32_y36br"]
+[ext_resource type="ArrayMesh" uid="uid://twxdg3qrhvax" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_crystal.obj" id="33_hta0r"]
+[ext_resource type="ArrayMesh" uid="uid://l6k7uwv4k7yl" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_end.obj" id="34_wpehy"]
+[ext_resource type="ArrayMesh" uid="uid://cr8124mg2wlug" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_endRound.obj" id="35_watxc"]
+[ext_resource type="ArrayMesh" uid="uid://bdspunbqsvcww" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_endRoundSpawn.obj" id="36_tk3wt"]
+[ext_resource type="ArrayMesh" uid="uid://cfoqgtby5kdxa" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_endSpawn.obj" id="37_m0js4"]
+[ext_resource type="ArrayMesh" uid="uid://dlgtddkt643h0" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_hill.obj" id="38_rj75o"]
+[ext_resource type="ArrayMesh" uid="uid://bkuygp0tsq2x2" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverBridge.obj" id="39_gloju"]
+[ext_resource type="ArrayMesh" uid="uid://c83jdg16m1bw8" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverCorner.obj" id="40_dahtx"]
+[ext_resource type="ArrayMesh" uid="uid://da7gn0g0pv88t" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverFall.obj" id="41_jc24d"]
+[ext_resource type="ArrayMesh" uid="uid://bp8mwdhq76plr" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverSlope.obj" id="42_5xa48"]
+[ext_resource type="ArrayMesh" uid="uid://jqsjxw2rjpyr" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverSlopeLarge.obj" id="43_m47w2"]
+[ext_resource type="ArrayMesh" uid="uid://bi6kp3wos8so4" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverStraight.obj" id="44_nvexn"]
+[ext_resource type="ArrayMesh" uid="uid://chm5fycqk6ncb" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_riverTransition.obj" id="45_s80hn"]
+[ext_resource type="ArrayMesh" uid="uid://mu0o6t835uh1" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_rock.obj" id="46_xxuj2"]
+[ext_resource type="ArrayMesh" uid="uid://bewhqou10gkam" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_slope.obj" id="47_lpu0g"]
+[ext_resource type="ArrayMesh" uid="uid://dfax26bywjt12" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_spawn.obj" id="48_i2xdh"]
+[ext_resource type="ArrayMesh" uid="uid://ds17qef2qmtgu" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_spawnRound.obj" id="49_mhbhf"]
+[ext_resource type="ArrayMesh" uid="uid://doenw11053sxc" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_split.obj" id="50_005lp"]
+[ext_resource type="ArrayMesh" uid="uid://cgtk550p1owh4" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_straight.obj" id="51_6ha3m"]
+[ext_resource type="ArrayMesh" uid="uid://beask5kcuvao1" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_straightHill.obj" id="52_6jwy8"]
+[ext_resource type="ArrayMesh" uid="uid://swba5yv568ra" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_straightHillLarge.obj" id="53_nlco5"]
+[ext_resource type="ArrayMesh" uid="uid://v1cfk66bsiib" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_transition.obj" id="54_qq5oe"]
+[ext_resource type="ArrayMesh" uid="uid://xd0kta7ig2at" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_tree.obj" id="55_p6m6c"]
+[ext_resource type="ArrayMesh" uid="uid://bxaualdm0lukw" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_treeDouble.obj" id="56_yx2jh"]
+[ext_resource type="ArrayMesh" uid="uid://bimphch3owveu" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_treeQuad.obj" id="57_x4sxe"]
+[ext_resource type="ArrayMesh" uid="uid://cf7sgawdtbtto" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideCorner.obj" id="58_vb17a"]
+[ext_resource type="ArrayMesh" uid="uid://ddqs5oe721cjh" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideSplit.obj" id="59_sdsu7"]
+[ext_resource type="ArrayMesh" uid="uid://b0ou8jchuqunp" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideStraight.obj" id="60_n7msw"]
+[ext_resource type="ArrayMesh" uid="uid://dowyglri0kiaq" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_wideTransition.obj" id="61_wjwdt"]
+[ext_resource type="ArrayMesh" uid="uid://eebkh0w6jhhi" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure.obj" id="62_rq1yv"]
+[ext_resource type="ArrayMesh" uid="uid://b5e6s5a6ybipx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_woodStructure_high.obj" id="63_tsw8r"]
+[ext_resource type="ArrayMesh" uid="uid://m3at4nvpnw30" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile.obj" id="64_eti40"]
+[ext_resource type="ArrayMesh" uid="uid://vtx8mx8bi6vx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_bump.obj" id="65_y2jlj"]
+[ext_resource type="ArrayMesh" uid="uid://dgedrtoupd1kx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerInner.obj" id="66_bih8q"]
+[ext_resource type="ArrayMesh" uid="uid://57uyabu3qa3t" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerLarge.obj" id="67_6ooyw"]
+[ext_resource type="ArrayMesh" uid="uid://cgqc1ogm0rwq8" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerOuter.obj" id="68_0r8dd"]
+[ext_resource type="ArrayMesh" uid="uid://bbl6e3m7velnd" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerRound.obj" id="69_gitfm"]
+[ext_resource type="ArrayMesh" uid="uid://drqrgi065b8le" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerSquare.obj" id="70_dfmit"]
+[ext_resource type="ArrayMesh" uid="uid://dkku17oohpv00" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_crossing.obj" id="71_fccx3"]
+[ext_resource type="ArrayMesh" uid="uid://c8fal1sjse2mx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_crystal.obj" id="72_fowat"]
+[ext_resource type="ArrayMesh" uid="uid://ivrd8jwpbeyx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_dirt.obj" id="73_gy4gt"]
+[ext_resource type="ArrayMesh" uid="uid://ck161613um8rx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_dirtHigh.obj" id="74_4cdik"]
+[ext_resource type="ArrayMesh" uid="uid://dfel2uo4h1voq" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_end.obj" id="75_b7rok"]
+[ext_resource type="ArrayMesh" uid="uid://dqidgqhtetuvj" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_endRound.obj" id="76_so28u"]
+[ext_resource type="ArrayMesh" uid="uid://bcxuhdggmnnlh" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_endRoundSpawn.obj" id="77_iuyxs"]
+[ext_resource type="ArrayMesh" uid="uid://ba820gkpqqxra" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_endSpawn.obj" id="78_ogqxf"]
+[ext_resource type="ArrayMesh" uid="uid://bp55w3nxxgmqc" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_hill.obj" id="79_qbvyc"]
+[ext_resource type="ArrayMesh" uid="uid://cfonsy4bi3b4f" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverBridge.obj" id="80_ospgt"]
+[ext_resource type="ArrayMesh" uid="uid://cxiq4h8mrfp3t" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverCorner.obj" id="81_kwgab"]
+[ext_resource type="ArrayMesh" uid="uid://cktlt1hkqlj77" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverFall.obj" id="82_obnfg"]
+[ext_resource type="ArrayMesh" uid="uid://cuf8dt2h2cpdl" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverSlope.obj" id="83_g022d"]
+[ext_resource type="ArrayMesh" uid="uid://ylq1h0gl0lx1" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverSlopeLarge.obj" id="84_47rbj"]
+[ext_resource type="ArrayMesh" uid="uid://bl0y5y5qs47ru" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverStraight.obj" id="85_1e1at"]
+[ext_resource type="ArrayMesh" uid="uid://c2q1etvie81h6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_riverTransition.obj" id="86_apono"]
+[ext_resource type="ArrayMesh" uid="uid://dio2l2eytp7r" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_rock.obj" id="87_ukiss"]
+[ext_resource type="ArrayMesh" uid="uid://cpfkwg5svjk2b" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_slope.obj" id="88_2aup0"]
+[ext_resource type="ArrayMesh" uid="uid://cyomcgxibyghm" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_spawn.obj" id="89_6sbb1"]
+[ext_resource type="ArrayMesh" uid="uid://dtmbin0eci8li" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_spawnRound.obj" id="90_2svmk"]
+[ext_resource type="ArrayMesh" uid="uid://hqj7rswi5wqd" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_split.obj" id="91_lvm6e"]
+[ext_resource type="ArrayMesh" uid="uid://dunwivdugivom" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_straight.obj" id="92_de470"]
+[ext_resource type="ArrayMesh" uid="uid://dftdy7luvx3hq" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_straightHill.obj" id="93_qmmco"]
+[ext_resource type="ArrayMesh" uid="uid://cbkup3m535gqn" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_straightHillLarge.obj" id="94_7q5u5"]
+[ext_resource type="ArrayMesh" uid="uid://bpka2o6avcfpl" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_transition.obj" id="95_d8hkn"]
+[ext_resource type="ArrayMesh" uid="uid://dwy0qkt5tt5d1" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_tree.obj" id="96_ixsdn"]
+[ext_resource type="ArrayMesh" uid="uid://degv0x77vj7ue" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_treeDouble.obj" id="97_biccr"]
+[ext_resource type="ArrayMesh" uid="uid://dt2mn3tu7nfh5" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_treeQuad.obj" id="98_5i77i"]
+[ext_resource type="ArrayMesh" uid="uid://bm1pjfdugclkx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideCorner.obj" id="99_c4mq0"]
+[ext_resource type="ArrayMesh" uid="uid://de3xvyrtp7fm5" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideSplit.obj" id="100_w2j7u"]
+[ext_resource type="ArrayMesh" uid="uid://cvvfu3t4s2v42" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideStraight.obj" id="101_0bsw5"]
+[ext_resource type="ArrayMesh" uid="uid://rflij4no5o6j" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_wideTransition.obj" id="102_2qf3o"]
+[ext_resource type="ArrayMesh" uid="uid://bgdxqtqu5dp7v" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_base.obj" id="103_w0aw3"]
+[ext_resource type="ArrayMesh" uid="uid://oibcqyl0swnn" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_bottomA.obj" id="104_y781k"]
+[ext_resource type="ArrayMesh" uid="uid://br6r27v6iii2g" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_bottomB.obj" id="105_kx8mv"]
+[ext_resource type="ArrayMesh" uid="uid://dbplbgl7mbjsy" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_bottomC.obj" id="106_pto4l"]
+[ext_resource type="ArrayMesh" uid="uid://p7vfn0w3ph4g" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_crystals.obj" id="107_fn58j"]
+[ext_resource type="ArrayMesh" uid="uid://bkjnvv0od8e1f" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleA.obj" id="108_63bhr"]
+[ext_resource type="ArrayMesh" uid="uid://drxrowifdipm4" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleB.obj" id="109_d22ek"]
+[ext_resource type="ArrayMesh" uid="uid://braq3n10tjhxc" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_middleC.obj" id="110_gnut4"]
+[ext_resource type="ArrayMesh" uid="uid://v42j0n5qg3t6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_roofA.obj" id="111_hl6l0"]
+[ext_resource type="ArrayMesh" uid="uid://b7fgc1tgmj256" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_roofB.obj" id="112_chuqv"]
+[ext_resource type="ArrayMesh" uid="uid://cu5biw1s53are" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_roofC.obj" id="113_f7wsm"]
+[ext_resource type="ArrayMesh" uid="uid://bd7xe5ph636o4" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleA.obj" id="114_0msdb"]
+[ext_resource type="ArrayMesh" uid="uid://cipiws2pkp0of" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleB.obj" id="115_1rn2q"]
+[ext_resource type="ArrayMesh" uid="uid://chj06xfirjiig" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleC.obj" id="116_gn2hj"]
+[ext_resource type="ArrayMesh" uid="uid://5nln5hf478pd" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleD.obj" id="117_snk8m"]
+[ext_resource type="ArrayMesh" uid="uid://d08ej1neai4aa" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleE.obj" id="118_hi588"]
+[ext_resource type="ArrayMesh" uid="uid://do6hfuo00xh0v" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_sampleF.obj" id="119_m4vlj"]
+[ext_resource type="ArrayMesh" uid="uid://dev4aualedxq7" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_topA.obj" id="120_ldbar"]
+[ext_resource type="ArrayMesh" uid="uid://dr76imkow32nu" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_topB.obj" id="121_1fk6o"]
+[ext_resource type="ArrayMesh" uid="uid://begfnyn75ctll" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerRound_topC.obj" id="122_3jfs7"]
+[ext_resource type="ArrayMesh" uid="uid://bxulf540kprvy" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_bottomA.obj" id="123_y5kr2"]
+[ext_resource type="ArrayMesh" uid="uid://optcdbgyfopy" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_bottomB.obj" id="124_ds7t1"]
+[ext_resource type="ArrayMesh" uid="uid://p00n42m6xfsb" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_bottomC.obj" id="125_gnvq4"]
+[ext_resource type="ArrayMesh" uid="uid://ca1ypr6p34xsl" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_middleA.obj" id="126_hsabn"]
+[ext_resource type="ArrayMesh" uid="uid://bpxx4ink4d304" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_middleB.obj" id="127_oiopv"]
+[ext_resource type="ArrayMesh" uid="uid://c6opbm1llqwho" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_middleC.obj" id="128_aom3m"]
+[ext_resource type="ArrayMesh" uid="uid://br65q5jiqgxv6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_roofA.obj" id="129_o2ifh"]
+[ext_resource type="ArrayMesh" uid="uid://do2rrjlldyov0" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_roofB.obj" id="130_0mcx2"]
+[ext_resource type="ArrayMesh" uid="uid://bk6gjmd7pne0u" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_roofC.obj" id="131_mfyqp"]
+[ext_resource type="ArrayMesh" uid="uid://jd5va2ogma66" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleA.obj" id="132_yipma"]
+[ext_resource type="ArrayMesh" uid="uid://7ydfsw847h41" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleB.obj" id="133_hajf0"]
+[ext_resource type="ArrayMesh" uid="uid://b4ucdqrooxeq6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleC.obj" id="134_8svji"]
+[ext_resource type="ArrayMesh" uid="uid://o6gaauxlhcb3" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleD.obj" id="135_wcwht"]
+[ext_resource type="ArrayMesh" uid="uid://dtkirdhfluiob" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleE.obj" id="136_7qj71"]
+[ext_resource type="ArrayMesh" uid="uid://b3aa28k36aagp" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_sampleF.obj" id="137_htr2g"]
+[ext_resource type="ArrayMesh" uid="uid://cultqt7mpmlay" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_topA.obj" id="138_yl3p0"]
+[ext_resource type="ArrayMesh" uid="uid://dfh4wuew3p24" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_topB.obj" id="139_0tflu"]
+[ext_resource type="ArrayMesh" uid="uid://cbtvjk3k48nxs" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_topC.obj" id="140_0lx6n"]
+[ext_resource type="ArrayMesh" uid="uid://hegohkflhu8t" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_ballista.obj" id="141_8eng1"]
+[ext_resource type="ArrayMesh" uid="uid://bigcvik3ainvx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_blaster.obj" id="142_n8b1x"]
+[ext_resource type="ArrayMesh" uid="uid://dwyrc2od4gmo6" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_cannon.obj" id="143_aq426"]
+[ext_resource type="ArrayMesh" uid="uid://c7c311m4km6ok" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_catapult.obj" id="144_qkulv"]
+[ext_resource type="ArrayMesh" uid="uid://b25t8pahq56gt" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/woodStructure.obj" id="145_35q72"]
+[ext_resource type="ArrayMesh" uid="uid://cgo0s4hwmdnoq" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/woodStructure_high.obj" id="146_vj5ay"]
+
+[node name="tower-defense-mesh-library" type="Node3D"]
+
+[node name="DetailCrystal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("1_lr6ge")
+
+[node name="DetailCrystalLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("2_ma7xk")
+
+[node name="DetailDirt" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("3_l5e2r")
+
+[node name="DetailDirtLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("4_cd2ke")
+
+[node name="DetailRocks" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("5_5f38i")
+
+[node name="DetailRocksLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("6_34iro")
+
+[node name="DetailTree" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("7_dwndb")
+
+[node name="DetailTreeLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("8_671oh")
+
+[node name="EnemyUfoGreen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("9_1lh56")
+
+[node name="EnemyUfoGreenWeapon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("10_3sv6m")
+
+[node name="EnemyUfoPurple" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("11_gtyne")
+
+[node name="EnemyUfoPurpleWeapon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("12_bbsxb")
+
+[node name="EnemyUfoRed" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("13_cpyv1")
+
+[node name="EnemyUfoRedWeapon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("14_snyhr")
+
+[node name="EnemyUfoYellow" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("15_bh6mh")
+
+[node name="EnemyUfoYellowWeapon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("16_awacl")
+
+[node name="SnowDetailCrystal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("17_bcjns")
+
+[node name="SnowDetailCrystalLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("18_hifoq")
+
+[node name="SnowDetailDirt" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("19_vmxoh")
+
+[node name="SnowDetailDirtLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("20_ka2wf")
+
+[node name="SnowDetailRocks" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("21_ifrct")
+
+[node name="SnowDetailRocksLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("22_ekiox")
+
+[node name="SnowDetailTree" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("23_1kln6")
+
+[node name="SnowDetailTreeLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("24_xsvmj")
+
+[node name="SnowTile" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("25_eada2")
+
+[node name="SnowTileBump" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("26_acyxe")
+
+[node name="SnowTileCornerInner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("27_4qnnf")
+
+[node name="SnowTileCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("28_apayk")
+
+[node name="SnowTileCornerOuter" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("29_45iy8")
+
+[node name="SnowTileCornerRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("30_t7x6c")
+
+[node name="SnowTileCornerSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("31_1rrsx")
+
+[node name="SnowTileCrossing" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("32_y36br")
+
+[node name="SnowTileCrystal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("33_hta0r")
+
+[node name="SnowTileEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("34_wpehy")
+
+[node name="SnowTileEndRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("35_watxc")
+
+[node name="SnowTileEndRoundSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("36_tk3wt")
+
+[node name="SnowTileEndSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("37_m0js4")
+
+[node name="SnowTileHill" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("38_rj75o")
+
+[node name="SnowTileRiverBridge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("39_gloju")
+
+[node name="SnowTileRiverCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("40_dahtx")
+
+[node name="SnowTileRiverFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("41_jc24d")
+
+[node name="SnowTileRiverSlope" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("42_5xa48")
+
+[node name="SnowTileRiverSlopeLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("43_m47w2")
+
+[node name="SnowTileRiverStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("44_nvexn")
+
+[node name="SnowTileRiverTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("45_s80hn")
+
+[node name="SnowTileRock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("46_xxuj2")
+
+[node name="SnowTileSlope" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("47_lpu0g")
+
+[node name="SnowTileSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("48_i2xdh")
+
+[node name="SnowTileSpawnRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("49_mhbhf")
+
+[node name="SnowTileSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("50_005lp")
+
+[node name="SnowTileStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("51_6ha3m")
+
+[node name="SnowTileStraightHill" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("52_6jwy8")
+
+[node name="SnowTileStraightHillLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("53_nlco5")
+
+[node name="SnowTileTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("54_qq5oe")
+
+[node name="SnowTileTree" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("55_p6m6c")
+
+[node name="SnowTileTreeDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("56_yx2jh")
+
+[node name="SnowTileTreeQuad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("57_x4sxe")
+
+[node name="SnowTileWideCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("58_vb17a")
+
+[node name="SnowTileWideSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("59_sdsu7")
+
+[node name="SnowTileWideStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("60_n7msw")
+
+[node name="SnowTileWideTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("61_wjwdt")
+
+[node name="SnowWoodStructure" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("62_rq1yv")
+
+[node name="SnowWoodStructureHigh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("63_tsw8r")
+
+[node name="Tile" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("64_eti40")
+
+[node name="TileBump" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("65_y2jlj")
+
+[node name="TileCornerInner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("66_bih8q")
+
+[node name="TileCornerLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("67_6ooyw")
+
+[node name="TileCornerOuter" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("68_0r8dd")
+
+[node name="TileCornerRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("69_gitfm")
+
+[node name="TileCornerSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("70_dfmit")
+
+[node name="TileCrossing" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("71_fccx3")
+
+[node name="TileCrystal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("72_fowat")
+
+[node name="TileDirt" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("73_gy4gt")
+
+[node name="TileDirtHigh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("74_4cdik")
+
+[node name="TileEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("75_b7rok")
+
+[node name="TileEndRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("76_so28u")
+
+[node name="TileEndRoundSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("77_iuyxs")
+
+[node name="TileEndSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("78_ogqxf")
+
+[node name="TileHill" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("79_qbvyc")
+
+[node name="TileRiverBridge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("80_ospgt")
+
+[node name="TileRiverCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("81_kwgab")
+
+[node name="TileRiverFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("82_obnfg")
+
+[node name="TileRiverSlope" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("83_g022d")
+
+[node name="TileRiverSlopeLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("84_47rbj")
+
+[node name="TileRiverStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("85_1e1at")
+
+[node name="TileRiverTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("86_apono")
+
+[node name="TileRock" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("87_ukiss")
+
+[node name="TileSlope" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("88_2aup0")
+
+[node name="TileSpawn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("89_6sbb1")
+
+[node name="TileSpawnRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("90_2svmk")
+
+[node name="TileSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("91_lvm6e")
+
+[node name="TileStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("92_de470")
+
+[node name="TileStraightHill" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("93_qmmco")
+
+[node name="TileStraightHillLarge" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("94_7q5u5")
+
+[node name="TileTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("95_d8hkn")
+
+[node name="TileTree" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("96_ixsdn")
+
+[node name="TileTreeDouble" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("97_biccr")
+
+[node name="TileTreeQuad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("98_5i77i")
+
+[node name="TileWideCorner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("99_c4mq0")
+
+[node name="TileWideSplit" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("100_w2j7u")
+
+[node name="TileWideStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("101_0bsw5")
+
+[node name="TileWideTransition" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("102_2qf3o")
+
+[node name="TowerRoundBase" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("103_w0aw3")
+
+[node name="TowerRoundBottomA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("104_y781k")
+
+[node name="TowerRoundBottomB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("105_kx8mv")
+
+[node name="TowerRoundBottomC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("106_pto4l")
+
+[node name="TowerRoundCrystals" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("107_fn58j")
+
+[node name="TowerRoundMiddleA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("108_63bhr")
+
+[node name="TowerRoundMiddleB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("109_d22ek")
+
+[node name="TowerRoundMiddleC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("110_gnut4")
+
+[node name="TowerRoundRoofA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("111_hl6l0")
+
+[node name="TowerRoundRoofB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("112_chuqv")
+
+[node name="TowerRoundRoofC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("113_f7wsm")
+
+[node name="TowerRoundSampleA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("114_0msdb")
+
+[node name="TowerRoundSampleB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("115_1rn2q")
+
+[node name="TowerRoundSampleC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("116_gn2hj")
+
+[node name="TowerRoundSampleD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("117_snk8m")
+
+[node name="TowerRoundSampleE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("118_hi588")
+
+[node name="TowerRoundSampleF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("119_m4vlj")
+
+[node name="TowerRoundTopA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("120_ldbar")
+
+[node name="TowerRoundTopB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("121_1fk6o")
+
+[node name="TowerRoundTopC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("122_3jfs7")
+
+[node name="TowerSquareBottomA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("123_y5kr2")
+
+[node name="TowerSquareBottomB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("124_ds7t1")
+
+[node name="TowerSquareBottomC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("125_gnvq4")
+
+[node name="TowerSquareMiddleA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("126_hsabn")
+
+[node name="TowerSquareMiddleB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("127_oiopv")
+
+[node name="TowerSquareMiddleC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("128_aom3m")
+
+[node name="TowerSquareRoofA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("129_o2ifh")
+
+[node name="TowerSquareRoofB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("130_0mcx2")
+
+[node name="TowerSquareRoofC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("131_mfyqp")
+
+[node name="TowerSquareSampleA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("132_yipma")
+
+[node name="TowerSquareSampleB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("133_hajf0")
+
+[node name="TowerSquareSampleC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("134_8svji")
+
+[node name="TowerSquareSampleD" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("135_wcwht")
+
+[node name="TowerSquareSampleE" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("136_7qj71")
+
+[node name="TowerSquareSampleF" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("137_htr2g")
+
+[node name="TowerSquareTopA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("138_yl3p0")
+
+[node name="TowerSquareTopB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("139_0tflu")
+
+[node name="TowerSquareTopC" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("140_0lx6n")
+
+[node name="WeaponBallista" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("141_8eng1")
+
+[node name="WeaponBlaster" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("142_n8b1x")
+
+[node name="WeaponCannon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("143_aq426")
+
+[node name="WeaponCatapult" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("144_qkulv")
+
+[node name="WoodStructure" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("145_35q72")
+
+[node name="WoodStructureHigh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000425935, 0, -0.0459294)
+mesh = ExtResource("146_vj5ay")

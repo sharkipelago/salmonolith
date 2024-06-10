@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpka2o6avcfpl"
+path="res://.godot/imported/tile_transition.obj-3dda797537dd551b374380e423c9195a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_transition.obj-3dda797537dd551b374380e423c9195a.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_transition.obj"
+dest_files=["res://.godot/imported/tile_transition.obj-3dda797537dd551b374380e423c9195a.mesh", "res://.godot/imported/tile_transition.obj-3dda797537dd551b374380e423c9195a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

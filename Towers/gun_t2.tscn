@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://be8pu7jigv4u8"]
+
+[ext_resource type="Script" path="res://Towers/gun_t2.gd" id="1_2ymcn"]
+[ext_resource type="ArrayMesh" uid="uid://bigcvik3ainvx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_blaster.obj" id="2_iuq4w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ht3j1"]
+albedo_color = Color(0.407843, 0.376471, 1, 1)
+
+[node name="GunT2" type="Node3D"]
+script = ExtResource("1_2ymcn")
+
+[node name="Turret" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_iuq4w")
+surface_material_override/1 = SubResource("StandardMaterial3D_ht3j1")
+
+[node name="Muzzle" type="Marker3D" parent="Turret"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329846, 0.415727)

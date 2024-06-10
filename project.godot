@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="salmonolith"
+run/main_scene="res://game_scene.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+
+[autoload]
+
+GameData="*res://Singletons/GameData.gd"
+
+[display]
+
+mouse_cursor/custom_image="res://Assets/UI/cursor_pointer3D_shadow.png"
+
+[filesystem]
+
+import/fbx/enabled=false

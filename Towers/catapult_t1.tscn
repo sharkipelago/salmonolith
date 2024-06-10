@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://db3q68d1objp1"]
+
+[ext_resource type="Script" path="res://Towers/catapult_t1.gd" id="1_nyt5l"]
+[ext_resource type="ArrayMesh" uid="uid://c7c311m4km6ok" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_catapult.obj" id="2_o4wgw"]
+[ext_resource type="PackedScene" uid="uid://d2ewc10d6aglm" path="res://Towers/range_indicator.tscn" id="3_cdfo3"]
+
+[node name="CatapultT1" type="Node3D"]
+script = ExtResource("1_nyt5l")
+
+[node name="Turret" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0)
+mesh = ExtResource("2_o4wgw")
+
+[node name="RangeIndicator" parent="." instance=ExtResource("3_cdfo3")]

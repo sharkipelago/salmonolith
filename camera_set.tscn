@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://lqlaannh6c7p"]
+
+[ext_resource type="Script" path="res://camera_set.gd" id="1_8efps"]
+[ext_resource type="Script" path="res://camera.gd" id="1_gyrav"]
+
+[node name="CameraSet" type="Node3D"]
+script = ExtResource("1_8efps")
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(-1, -7.16125e-08, 5.01436e-08, 0, 0.573576, 0.819152, -8.74228e-08, 0.819152, -0.573576, 0, 9, -6)
+script = ExtResource("1_gyrav")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 0, 1, 0, 0, 0)
+visible = false

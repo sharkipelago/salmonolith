@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cbtvjk3k48nxs"
+path="res://.godot/imported/towerSquare_topC.obj-a3ee87894a5c0b84db612f1f37e4b7ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/towerSquare_topC.obj-a3ee87894a5c0b84db612f1f37e4b7ba.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/towerSquare_topC.obj"
+dest_files=["res://.godot/imported/towerSquare_topC.obj-a3ee87894a5c0b84db612f1f37e4b7ba.mesh", "res://.godot/imported/towerSquare_topC.obj-a3ee87894a5c0b84db612f1f37e4b7ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

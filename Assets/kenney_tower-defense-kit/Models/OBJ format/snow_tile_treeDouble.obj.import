@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxaualdm0lukw"
+path="res://.godot/imported/snow_tile_treeDouble.obj-49d6fcce0dbe9059ec3255d426c2d391.mesh"
+
+[deps]
+
+files=["res://.godot/imported/snow_tile_treeDouble.obj-49d6fcce0dbe9059ec3255d426c2d391.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/snow_tile_treeDouble.obj"
+dest_files=["res://.godot/imported/snow_tile_treeDouble.obj-49d6fcce0dbe9059ec3255d426c2d391.mesh", "res://.godot/imported/snow_tile_treeDouble.obj-49d6fcce0dbe9059ec3255d426c2d391.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

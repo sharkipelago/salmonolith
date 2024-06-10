@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://drqrgi065b8le"
+path="res://.godot/imported/tile_cornerSquare.obj-c960fc07bc5bdc75cb6882a6115c64cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tile_cornerSquare.obj-c960fc07bc5bdc75cb6882a6115c64cc.mesh"]
+
+source_file="res://Assets/kenney_tower-defense-kit/Models/OBJ format/tile_cornerSquare.obj"
+dest_files=["res://.godot/imported/tile_cornerSquare.obj-c960fc07bc5bdc75cb6882a6115c64cc.mesh", "res://.godot/imported/tile_cornerSquare.obj-c960fc07bc5bdc75cb6882a6115c64cc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

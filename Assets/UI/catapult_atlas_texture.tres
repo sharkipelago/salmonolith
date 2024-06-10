@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://clssae6kwwa4w"]
+
+[ext_resource type="Texture2D" uid="uid://bpefvx1xfelln" path="res://Assets/kenney_tower-defense-kit/Isometric/weapon_catapult_E.png" id="1_bow6u"]
+
+[resource]
+atlas = ExtResource("1_bow6u")
+region = Rect2(220, 260, 70, 70)

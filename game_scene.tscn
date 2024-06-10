@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=3 uid="uid://b88i0gvlbtvob"]
+
+[ext_resource type="Script" path="res://game_scene.gd" id="1_gvqpn"]
+[ext_resource type="Texture2D" uid="uid://0y2uy0yrsjje" path="res://Assets/UI/blue_button12.png" id="2_sa6au"]
+[ext_resource type="PackedScene" uid="uid://xo0n8edusf2j" path="res://Maps/map_1.tscn" id="2_sody3"]
+[ext_resource type="PackedScene" uid="uid://lqlaannh6c7p" path="res://camera_set.tscn" id="3_2sg3m"]
+[ext_resource type="PlaneMesh" uid="uid://ce1e73ebjao1k" path="res://Assets/Materials/ocean_mesh.tres" id="4_yhn37"]
+[ext_resource type="Texture2D" uid="uid://dv0vweje80yyt" path="res://Assets/UI/gun_atlas_texture.tres" id="7_utgy4"]
+[ext_resource type="Texture2D" uid="uid://clssae6kwwa4w" path="res://Assets/UI/catapult_atlas_texture.tres" id="8_jdnwb"]
+
+[sub_resource type="GDScript" id="GDScript_1fxgv"]
+script/source = "extends CanvasLayer
+
+#func set_tower_preview(tower_type, mouse_position):
+	#var drag_tower = load (\"res://Towers/\" + tower_type + \".tscn\").instantiate()
+	#drag_tower.set_name(\"DragTower\")
+#
+	#
+	#var control = Control.new()
+	#control.add_child(drag_tower, true)
+	#control.position = mouse_position
+	#control.set_name(\"TowerPreview\")
+	#add_child(control, true)
+"
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_gvqpn")
+
+[node name="CameraSet" parent="." instance=ExtResource("3_2sg3m")]
+
+[node name="Map1" parent="." instance=ExtResource("2_sody3")]
+
+[node name="Towers" type="Node" parent="."]
+
+[node name="Ocean" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ocean"]
+mesh = ExtResource("4_yhn37")
+skeleton = NodePath("../..")
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = SubResource("GDScript_1fxgv")
+
+[node name="HUD" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BuildBar" type="VBoxContainer" parent="UI/HUD"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -648.0
+offset_right = 100.0
+offset_bottom = -248.0
+grow_vertical = 0
+
+[node name="Gun" type="TextureButton" parent="UI/HUD/BuildBar" groups=["build_button"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_sa6au")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="UI/HUD/BuildBar/Gun"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_utgy4")
+expand_mode = 2
+
+[node name="Catapult" type="TextureButton" parent="UI/HUD/BuildBar" groups=["build_button"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_sa6au")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="UI/HUD/BuildBar/Catapult"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_jdnwb")
+expand_mode = 2
+
+[node name="TowerPreviews" type="Node" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 47.4165, 0)

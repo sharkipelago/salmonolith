@@ -1,0 +1,9 @@
+[gd_resource type="PlaneMesh" load_steps=2 format=3 uid="uid://dskc2531htg40"]
+
+[ext_resource type="Material" uid="uid://cvka6aealyc5w" path="res://Assets/Materials/river_shader_material.tres" id="1_h5qqk"]
+
+[resource]
+material = ExtResource("1_h5qqk")
+size = Vector2(1, 1)
+subdivide_width = 1
+subdivide_depth = 1
