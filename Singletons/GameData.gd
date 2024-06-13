@@ -4,7 +4,7 @@ var tower_data = {
 	"GunT1": {
 		"damage": 1,
 		"speed": 5,
-		"range": 2 
+		"range": 3 
 	},
 	"CatapultT1" : {
 		"damage": 5,
@@ -15,6 +15,6 @@ var tower_data = {
 
 var enemy_data = {
 	"Salmon": {
-		"speed": 2
+		"speed": 5
 	}
 }
