@@ -1,36 +1,33 @@
-[gd_scene load_steps=9 format=3 uid="uid://b88i0gvlbtvob"]
+[gd_scene load_steps=14 format=3 uid="uid://b88i0gvlbtvob"]
 
 [ext_resource type="Script" path="res://game_scene.gd" id="1_gvqpn"]
 [ext_resource type="Texture2D" uid="uid://0y2uy0yrsjje" path="res://Assets/UI/blue_button12.png" id="2_sa6au"]
 [ext_resource type="PackedScene" uid="uid://xo0n8edusf2j" path="res://Maps/map_1.tscn" id="2_sody3"]
 [ext_resource type="PackedScene" uid="uid://lqlaannh6c7p" path="res://camera_set.tscn" id="3_2sg3m"]
 [ext_resource type="PlaneMesh" uid="uid://ce1e73ebjao1k" path="res://Assets/Materials/ocean_mesh.tres" id="4_yhn37"]
+[ext_resource type="Script" path="res://UI.gd" id="6_jlmp2"]
 [ext_resource type="Texture2D" uid="uid://dv0vweje80yyt" path="res://Assets/UI/gun_atlas_texture.tres" id="7_utgy4"]
 [ext_resource type="Texture2D" uid="uid://clssae6kwwa4w" path="res://Assets/UI/catapult_atlas_texture.tres" id="8_jdnwb"]
-
-[sub_resource type="GDScript" id="GDScript_1fxgv"]
-script/source = "extends CanvasLayer
-
-#func set_tower_preview(tower_type, mouse_position):
-	#var drag_tower = load (\"res://Towers/\" + tower_type + \".tscn\").instantiate()
-	#drag_tower.set_name(\"DragTower\")
-#
-	#
-	#var control = Control.new()
-	#control.add_child(drag_tower, true)
-	#control.position = mouse_position
-	#control.set_name(\"TowerPreview\")
-	#add_child(control, true)
-"
+[ext_resource type="Script" path="res://WaveSpawner.gd" id="8_v7ud6"]
+[ext_resource type="Texture2D" uid="uid://cqp1ljalyrw57" path="res://Assets/UI/fish-solid.png" id="9_85egw"]
+[ext_resource type="Texture2D" uid="uid://drjqdn774g72" path="res://Assets/UI/right.png" id="9_bocrb"]
+[ext_resource type="Texture2D" uid="uid://cc5wd0cud1rnn" path="res://Assets/UI/pause.png" id="10_744pa"]
+[ext_resource type="Texture2D" uid="uid://b5t871v1cj1dr" path="res://Assets/UI/fastForward.png" id="11_styja"]
 
 [node name="GameScene" type="Node2D"]
 script = ExtResource("1_gvqpn")
 
 [node name="CameraSet" parent="." instance=ExtResource("3_2sg3m")]
 
+[node name="Towers" type="Node" parent="."]
+
+[node name="WaveSpawner" type="Node" parent="."]
+script = ExtResource("8_v7ud6")
+
 [node name="Map1" parent="." instance=ExtResource("2_sody3")]
 
-[node name="Towers" type="Node" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 47.4165, 0)
 
 [node name="Ocean" type="Node3D" parent="."]
 
@@ -38,8 +35,10 @@ script = ExtResource("1_gvqpn")
 mesh = ExtResource("4_yhn37")
 skeleton = NodePath("../..")
 
+[node name="TowerPreviews" type="Node" parent="."]
+
 [node name="UI" type="CanvasLayer" parent="."]
-script = SubResource("GDScript_1fxgv")
+script = ExtResource("6_jlmp2")
 
 [node name="HUD" type="Control" parent="UI"]
 layout_mode = 3
@@ -95,7 +94,50 @@ grow_vertical = 2
 texture = ExtResource("8_jdnwb")
 expand_mode = 2
 
-[node name="TowerPreviews" type="Node" parent="."]
+[node name="GameControls" type="HBoxContainer" parent="UI/HUD"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -224.0
+offset_top = -120.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 47.4165, 0)
+[node name="CallWave" type="TextureButton" parent="UI/HUD/GameControls"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("9_85egw")
+stretch_mode = 0
+
+[node name="PausePlay" type="TextureButton" parent="UI/HUD/GameControls"]
+process_mode = 3
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+button_pressed = true
+texture_normal = ExtResource("9_bocrb")
+texture_pressed = ExtResource("10_744pa")
+stretch_mode = 0
+
+[node name="FastForward" type="TextureButton" parent="UI/HUD/GameControls"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("11_styja")
+stretch_mode = 0
+
+[connection signal="game_control_pressed" from="UI" to="." method="_on_ui_game_control_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/CallWave" to="WaveSpawner" method="_on_call_wave_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/CallWave" to="UI" method="_on_call_wave_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/PausePlay" to="UI" method="_on_pause_play_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/FastForward" to="UI" method="_on_fast_forward_pressed"]

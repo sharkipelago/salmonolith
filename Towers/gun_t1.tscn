@@ -1,8 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://cir0d11afegaa"]
+[gd_scene load_steps=8 format=3 uid="uid://cir0d11afegaa"]
 
 [ext_resource type="Script" path="res://Towers/gun_t1.gd" id="1_m7r7a"]
 [ext_resource type="ArrayMesh" uid="uid://bigcvik3ainvx" path="res://Assets/kenney_tower-defense-kit/Models/OBJ format/weapon_blaster.obj" id="2_4ujb1"]
-[ext_resource type="PackedScene" uid="uid://d2ewc10d6aglm" path="res://Towers/range_indicator.tscn" id="3_f4dmr"]
+[ext_resource type="ArrayMesh" uid="uid://rwlt6eb1b2uc" path="res://Assets/Meshes/range_mesh.tres" id="3_3wspb"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rv81o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w1mdc"]
+transparency = 1
+albedo_color = Color(1, 0.25098, 0, 0.396078)
+
+[sub_resource type="TorusMesh" id="TorusMesh_mfbjf"]
+outer_radius = 0.51
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tited"]
+albedo_color = Color(1, 0.25098, 0, 1)
 
 [node name="GunT1" type="Node3D"]
 script = ExtResource("1_m7r7a")
@@ -13,5 +25,21 @@ mesh = ExtResource("2_4ujb1")
 [node name="Muzzle" type="Marker3D" parent="Turret"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.329846, 0.415727)
 
-[node name="RangeIndicator" parent="." instance=ExtResource("3_f4dmr")]
-skeleton = NodePath("../Turret")
+[node name="Range" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Range"]
+shape = SubResource("CylinderShape3D_rv81o")
+
+[node name="Indicator" type="MeshInstance3D" parent="Range"]
+mesh = ExtResource("3_3wspb")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_w1mdc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Range/Indicator"]
+mesh = SubResource("TorusMesh_mfbjf")
+surface_material_override/0 = SubResource("StandardMaterial3D_tited")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

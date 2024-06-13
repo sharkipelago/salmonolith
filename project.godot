@@ -25,3 +25,9 @@ mouse_cursor/custom_image="res://Assets/UI/cursor_pointer3D_shadow.png"
 [filesystem]
 
 import/fbx/enabled=false
+
+[layer_names]
+
+3d_physics/layer_1="Island"
+3d_physics/layer_2="Tower"
+3d_physics/layer_3="Enemy"

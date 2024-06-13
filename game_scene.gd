@@ -3,6 +3,7 @@ extends Node
 var BLOCK_INDEX = 3 # The only gridmap element on which towers can be built
 var EMPTY_BLOCK_INDEX = 116
 
+var map_node
 var island_grid
 var build_bar
 
@@ -19,22 +20,28 @@ var w_key = false
 var s_key = false
 
 func _ready():
-	island_grid = get_node("Map1/Island")
+	map_node = get_node("Map1")
+	island_grid = map_node.get_node("Island")
 	build_bar = get_node("UI/HUD/BuildBar")
 	build_bar.visible = false
 	
+	# Wave Spawning
+	$WaveSpawner.map_node = map_node
+	$WaveSpawner.initalized_by_game_scene.emit()
+	
+	# Building
 	var tower_preview_node = get_node("TowerPreviews")
 	var greyed_material = preload("res://Assets/Materials/greyed_tower.tres")
 	for bb in get_tree().get_nodes_in_group("build_button"):
 		var tower = load("res://Towers/" +  bb.name.to_lower() + "_t1.tscn").instantiate()
+		tower.tower_name = bb.name  + "T1" # Refreence for scripts
 		tower.get_node("Turret").material_overlay = greyed_material
-		tower.get_node("RangeIndicator").scale += Vector3(2,2,2) * GameData.tower_data[bb.name + "T1"].range
-		print(tower.get_node("RangeIndicator").scale)
+		tower.get_node("Range").monitoring = false
+		tower.get_node("Range").monitorable = false
 		tower.visible = false
 		tower_preview_node.add_child(tower, true)
 		tower_previews[bb.name] = tower 
 		bb.mouse_entered.connect(preview_tower.bind(bb.name))
-		
 		bb.pressed.connect(verify_and_build.bind(bb.name))
 	
 func _process(delta):
@@ -63,8 +70,17 @@ func _input(event):
 			KEY_S:
 				s_key = event.pressed
 		if w_key or a_key or s_key or d_key:
-			hide_build_bar()
-	
+			cancel_build()
+
+###
+### Wave Functions
+###
+
+
+###
+### Build Functions
+###
+
 func update_build_location():
 	# Do not update the build location while the build bar is out
 	if build_bar.visible:
@@ -100,38 +116,43 @@ func clear_build_location():
 	island_grid.set_cell_item(build_location, -1)
 	build_location = null
 
-
 func update_build_bar():
 	if mouse_right_button and build_location and not build_bar.visible:
 		build_bar.position = mouse_position + Vector2(40, -80)
 		build_bar.visible = true
 	elif mouse_right_button and build_bar.visible:
-		hide_build_bar()
+		cancel_build()
 		
-func hide_build_bar():
+func cancel_build():
 	build_bar.visible = false
 	if active_tower_preview:
 		active_tower_preview.visible = false
+	clear_build_location()
+		
 
 func preview_tower(tower_type: String):
-	print("Previewing " + tower_type)
 	assert(build_location != null)
-	print(build_location)
 	if active_tower_preview:
 		active_tower_preview.visible = false
 	active_tower_preview = tower_previews[tower_type]
 	active_tower_preview.position = Vector3(build_location) + Vector3(0.5, 0.5, 0.5)
 	active_tower_preview.visible = true
 
-
 func verify_and_build(tower_type: String):
 	# Check Money here
-	print(tower_type)
 	var tower = load("res://Towers/" +  tower_type.to_lower() + "_t1.tscn").instantiate()
+	tower.name = tower_type + "T1_0" # name of the node
+	tower.tower_name = tower_type  + "T1" # Refreence for scripts
 	tower.position = Vector3(build_location) + Vector3(0.5, 0.5, 0.5) # Offset to place it on top of the block
-	tower.get_node("RangeIndicator").visible = false
+	tower.get_node("Range/Indicator").visible = false
 	get_node("Towers").add_child(tower, true)
 	island_grid.set_cell_item(build_location, EMPTY_BLOCK_INDEX) # to Prevent double building on this spot
 	build_location = null
-	hide_build_bar()
+	cancel_build()
 	
+###
+### Game Controls
+### 
+
+func _on_ui_game_control_pressed():
+	cancel_build()

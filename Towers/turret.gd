@@ -1,30 +1,33 @@
 extends Node3D
 
-var island_center = Vector3(0.5, 4.5, 1.5)
+var tower_name
+var stats
 
-func _physics_process(delta):	 
-	update_island_center(delta)
-	turn()
-	
+var enemies_in_range = [] #Enemies in range
+var enemy # current enemy
+
+func _ready():
+	stats = GameData.tower_data[tower_name] 
+	get_node("Range").scale = Vector3.ONE + (Vector3.ONE) * stats.range
+
+func _physics_process(delta):
+	if enemies_in_range.size() != 0:
+		select_enemy()
+		turn()
+
+func select_enemy():
+	enemy = enemies_in_range[0]
+
 func turn():
-	var enemy_position = island_center
-	get_node("Turret").look_at(Vector3(enemy_position.x, position.y, enemy_position.z), Vector3.UP, true)
+	var target = enemy.global_position
+	print(target)
+	get_node("Turret").look_at(Vector3(target.x, position.y, target.z), Vector3.UP, true)
 
 
-var moving_right = true
-var speed = 2
-var upper_bound = 4
-var lower_bound = -3
-
-func update_island_center(delta):
-	if island_center.x > upper_bound:
-		moving_right = false
-	if island_center.x < lower_bound:
-		moving_right = true
+func _on_range_body_entered(body):
+	enemies_in_range.append(body)
 	
-	var x_dest = upper_bound + .5
-	if !moving_right:
-		x_dest = lower_bound - .5	
-	island_center = island_center.move_toward(Vector3(x_dest, 4.5, 1.5), delta * speed)
-	
+func _on_range_body_exited(body):
+	enemies_in_range.erase(body)
+
 
