@@ -16,6 +16,7 @@ var tower_data = {
 var enemy_data = {
 	"Salmon": {
 		"speed": 2,
-		"max_hp": 30
+		"max_hp": 30,
+		"rock_damage": 1 # Amount of damage if it gets to the rock
 	}
 }

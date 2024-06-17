@@ -2,6 +2,9 @@ extends CanvasLayer
 
 signal game_control_pressed
 
+func update_rock_healthUI(hp):
+	$HUD/InfoBar/HBoxContainer/HP.value = hp
+
 func _on_call_wave_pressed():
 	game_control_pressed.emit()
 

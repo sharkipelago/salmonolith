@@ -11,6 +11,11 @@ var tower_previews = {} # All tower previews
 var active_tower_preview = null # Current tower preview
 var build_location = null
 
+var rock_hp 
+var rock_max_hp = 20
+
+signal game_finished(won_game)
+
 # Input
 var mouse_position = Vector2()
 var mouse_right_button = false
@@ -43,6 +48,11 @@ func _ready():
 		tower_previews[bb.name] = tower 
 		bb.mouse_entered.connect(preview_tower.bind(bb.name))
 		bb.pressed.connect(verify_and_build.bind(bb.name))
+		
+	# Rock
+	assert(rock_max_hp == $UI/HUD/InfoBar/HBoxContainer/HP.max_value)
+	rock_hp = rock_max_hp
+	$UI.update_rock_healthUI(rock_hp)
 	
 func _process(delta):
 	$CameraSet.update_rotation(delta, w_key, a_key, s_key, d_key)
@@ -73,9 +83,14 @@ func _input(event):
 			cancel_build()
 
 ###
-### Wave Functions
+### Rock Functions
 ###
-
+func _on_rock_damage(damage):
+	rock_hp -= damage
+	if rock_hp < 0:
+		game_finished.emit(false)
+		return
+	$UI.update_rock_healthUI(rock_hp)
 
 ###
 ### Build Functions
