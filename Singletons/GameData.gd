@@ -3,18 +3,19 @@ extends Node
 var tower_data = {
 	"GunT1": {
 		"damage": 1,
-		"speed": 5,
+		"cooldown": 0.5,
 		"range": 3 
 	},
 	"CatapultT1" : {
 		"damage": 5,
-		"speed": 1,
+		"cooldown": 1,
 		"range": 5 
 	}
 }
 
 var enemy_data = {
 	"Salmon": {
-		"speed": 5
+		"speed": 2,
+		"max_hp": 30
 	}
 }

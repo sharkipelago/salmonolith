@@ -1,6 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctent8qwi7gkg"]
+[gd_scene load_steps=11 format=3 uid="uid://ctent8qwi7gkg"]
 
 [ext_resource type="Script" path="res://Enemies/salmon.gd" id="1_tpwm0"]
+[ext_resource type="Material" uid="uid://5qfipd17bd2u" path="res://Assets/Materials/green_health.tres" id="2_s6lm1"]
+[ext_resource type="Material" uid="uid://byhv1rvyqot1u" path="res://Assets/Materials/yellow_health.tres" id="3_3a5nd"]
+[ext_resource type="Material" uid="uid://d0b47pyekqslm" path="res://Assets/Materials/red_health.tres" id="4_nd22w"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f7dxn"]
 albedo_color = Color(0.807942, 0.487446, 3.65794e-06, 1)
@@ -45,11 +48,19 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8ukwc")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pvwhx"]
+size = Vector3(0.251038, 1, 0.903076)
+
+[sub_resource type="SphereMesh" id="SphereMesh_um2kq"]
+radius = 0.1
+height = 0.2
 
 [node name="Salmon" type="PathFollow3D"]
 use_model_front = true
 loop = false
 script = ExtResource("1_tpwm0")
+green_health_material = ExtResource("2_s6lm1")
+yellow_health_material = ExtResource("3_3a5nd")
+red_health_material = ExtResource("4_nd22w")
 
 [node name="Salmon Steak (small)_001" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.05, 0, -0.05, 0, -2.18557e-09, 0, 0, 0)
@@ -62,4 +73,10 @@ collision_layer = 4
 collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0357971, 0, -0.122192)
 shape = SubResource("BoxShape3D_pvwhx")
+
+[node name="Healthbar" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.467522, 0)
+material_override = ExtResource("2_s6lm1")
+mesh = SubResource("SphereMesh_um2kq")
